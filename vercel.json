@@ -4,8 +4,8 @@
   "outputDirectory": "dist",
   "cleanUrls": true,
   "rewrites": [
-    { "source": "/minidemo", "destination": "/index.html" },
-    { "source": "/minidemo/", "destination": "/index.html" },
+    { "source": "/minidemo", "destination": "/" },
+    { "source": "/minidemo/", "destination": "/" },
     { "source": "/minidemo/assets/:path*", "destination": "/assets/:path*" },
     { "source": "/minidemo/meri.svg", "destination": "/meri.svg" }
   ],
