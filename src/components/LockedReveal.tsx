@@ -22,7 +22,7 @@ export function LockedReveal() {
       <div className="section-heading section-heading--center">
         <span className="eyebrow"><i /> CLASSIFIED UNTIL LAUNCH</span>
         <h2 id="locked-title">The full intelligence layer<br /><em>stays under wraps.</em></h2>
-        <p>Today is the signal. Tomorrow is the reveal.</p>
+        <p>The signal is live. The reveal begins at launch.</p>
       </div>
 
       <div className="locked-grid">
@@ -40,7 +40,7 @@ export function LockedReveal() {
             <LockIcon />
             <strong>{item}</strong>
             <span>COMING SOON</span>
-            <small>10 · 09 · 2026</small>
+            <small>09 · 09 · 2026 · 10:00 WIB</small>
           </motion.div>
         ))}
       </div>

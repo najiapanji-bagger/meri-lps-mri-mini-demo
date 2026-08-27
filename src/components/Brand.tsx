@@ -12,7 +12,7 @@ export function Brand({ compact = false }: { compact?: boolean }) {
       <span className="brand__mark">LPS</span>
       <span className="brand__copy">
         <strong>LPS MRI</strong>
-        <small>Media Risk Intelligence</small>
+        <small>LPS Media Monitoring &amp; Risk Intelligence</small>
       </span>
     </motion.a>
   );

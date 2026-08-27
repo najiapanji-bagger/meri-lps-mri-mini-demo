@@ -7,7 +7,8 @@
     { "source": "/minidemo", "destination": "/" },
     { "source": "/minidemo/", "destination": "/" },
     { "source": "/minidemo/assets/:path*", "destination": "/assets/:path*" },
-    { "source": "/minidemo/meri.svg", "destination": "/meri.svg" }
+    { "source": "/minidemo/meri.svg", "destination": "/meri.svg" },
+    { "source": "/minidemo/ku-aman-ada-lps.mp3", "destination": "/ku-aman-ada-lps.mp3" }
   ],
   "headers": [
     {
@@ -18,6 +19,12 @@
     },
     {
       "source": "/minidemo/assets/:path*",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+      ]
+    },
+    {
+      "source": "/minidemo/ku-aman-ada-lps.mp3",
       "headers": [
         { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
       ]

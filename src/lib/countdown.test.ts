@@ -2,12 +2,12 @@ import { describe, expect, it } from "vitest";
 import { formatCountdownValue, getCountdownParts, LAUNCH_AT } from "./countdown";
 
 describe("launch countdown", () => {
-  it("targets midnight Jakarta time on 10 September 2026", () => {
-    expect(LAUNCH_AT.toISOString()).toBe("2026-09-09T17:00:00.000Z");
+  it("targets 10:00 Jakarta time on 9 September 2026", () => {
+    expect(LAUNCH_AT.toISOString()).toBe("2026-09-09T03:00:00.000Z");
   });
 
   it("calculates stable date parts", () => {
-    const result = getCountdownParts(new Date("2026-09-08T17:00:00.000Z"));
+    const result = getCountdownParts(new Date("2026-09-08T03:00:00.000Z"));
     expect(result).toEqual({ days: 1, hours: 0, minutes: 0, seconds: 0, complete: false });
   });
 

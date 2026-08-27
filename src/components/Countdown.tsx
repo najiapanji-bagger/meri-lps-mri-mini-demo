@@ -75,7 +75,7 @@ export function Countdown() {
         >
           <span className="eyebrow"><i /> THE SIGNAL IS ALMOST READY</span>
           <h2 id="countdown-title">Demo Launch</h2>
-          <p className="launch-date">10.09.2026 <span>·</span> 00:00 WIB</p>
+          <p className="launch-date">09.09.2026 <span>·</span> 10:00 WIB</p>
         </motion.div>
 
         <div className="countdown-grid" aria-live="polite">

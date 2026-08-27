@@ -6,6 +6,7 @@ import { FeatureShowcase } from "./components/FeatureShowcase";
 import { FloatingAssistant } from "./components/FloatingAssistant";
 import { LockedReveal } from "./components/LockedReveal";
 import { MeriHero } from "./components/MeriHero";
+import { MusicControl } from "./components/MusicControl";
 import { NeuralCanvas } from "./components/NeuralCanvas";
 import { QrShare } from "./components/QrShare";
 
@@ -61,6 +62,7 @@ function App() {
         <Brand />
         <div className="site-header__actions">
           <span><i /> MINI DEMO</span>
+          <MusicControl />
           <QrShare />
         </div>
       </header>
@@ -85,7 +87,7 @@ function App() {
               </motion.div>
               <h1 id="hero-title">
                 <span>LPS MRI</span>
-                <small>Media Risk Intelligence</small>
+                <small>LPS Media Monitoring &amp; Risk Intelligence</small>
               </h1>
               <p className="hero-powered">Powered by <strong>MERI</strong></p>
               <p className="hero-lead">From external <TypewriterWord /><br />to strategic decisions.</p>
@@ -126,9 +128,9 @@ function App() {
         <section className="finale-section" aria-labelledby="finale-title">
           <NeuralCanvas />
           <motion.div className="finale-content" initial={{ opacity: 0, scale: 0.94 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true, amount: 0.35 }}>
-            <span className="eyebrow"><i /> READY FOR TOMORROW?</span>
+            <span className="eyebrow"><i /> READY FOR LAUNCH?</span>
             <h2 id="finale-title">Something big<br /><em>is coming.</em></h2>
-            <p>10 September 2026 · Festival Inovasi LPS 2026</p>
+            <p>9 September 2026 · 10.00 WIB · Festival Inovasi LPS 2026</p>
             <div className="finale-actions">
               <a href="#top" className="primary-action">Replay experience <span>↑</span></a>
               <QrShare />

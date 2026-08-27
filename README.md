@@ -1,13 +1,13 @@
 # LPS MRI Mini Demo Experience
 
-A playful, motion-first teaser for **LPS MRI — Media Risk Intelligence**, powered by **MERI**, created for Festival Inovasi LPS 2026 by Tim KJD.
+A playful, motion-first teaser for **LPS MRI — LPS Media Monitoring & Risk Intelligence**, powered by **MERI**, created for Festival Inovasi LPS 2026 by Tim KJD.
 
 This repository is intentionally separate from the production LPS MRI application. It does not contain production data, authentication, dashboards, or backend services.
 
 ## Dates
 
 - Workshop: **9 September 2026**
-- Official demo launch: **10 September 2026, 00:00 WIB**
+- Official demo launch: **9 September 2026, 10:00 WIB**
 
 ## Experience
 
@@ -19,6 +19,8 @@ This repository is intentionally separate from the production LPS MRI applicatio
 - Locked surprise cards for the full experience
 - Floating MERI companion
 - Dynamic QR code for mobile access
+- Looping **Ku Aman Ada LPS** soundtrack with an accessible play/pause control
+- Sound begins after the visitor's first interaction to comply with browser autoplay policies
 - Reduced-motion and low-power fallbacks
 
 ## Run locally

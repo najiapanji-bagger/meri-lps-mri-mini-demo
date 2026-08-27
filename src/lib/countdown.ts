@@ -1,4 +1,4 @@
-export const LAUNCH_AT = new Date("2026-09-10T00:00:00+07:00");
+export const LAUNCH_AT = new Date("2026-09-09T10:00:00+07:00");
 
 export type CountdownParts = {
   days: number;

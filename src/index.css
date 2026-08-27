@@ -224,6 +224,60 @@ svg {
   stroke-width: 1.6;
 }
 
+.music-control {
+  display: inline-flex;
+  min-height: 40px;
+  align-items: center;
+  gap: 10px;
+  padding: 0 15px;
+  border: 1px solid rgba(163, 211, 242, 0.22);
+  border-radius: 999px;
+  color: #d9e9f8;
+  background: rgba(9, 34, 64, 0.62);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(14px);
+  font-size: 10px;
+  font-weight: 700;
+  transition: border-color 180ms ease, color 180ms ease, background 180ms ease;
+}
+
+.music-control:hover,
+.music-control.is-playing {
+  border-color: rgba(245, 130, 32, 0.46);
+  color: #fff;
+  background: rgba(22, 55, 87, 0.82);
+}
+
+.music-control:disabled {
+  cursor: not-allowed;
+  opacity: 0.48;
+}
+
+.music-control__bars {
+  display: inline-flex;
+  width: 15px;
+  height: 15px;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+}
+
+.music-control__bars i {
+  width: 2px;
+  height: 5px;
+  border-radius: 999px;
+  background: currentColor;
+  transform-origin: center;
+}
+
+.music-control.is-playing .music-control__bars i {
+  animation: music-equalizer 0.72s ease-in-out infinite alternate;
+}
+
+.music-control.is-playing .music-control__bars i:nth-child(2) { animation-delay: -0.38s; }
+.music-control.is-playing .music-control__bars i:nth-child(3) { animation-delay: -0.2s; }
+.music-control.is-playing .music-control__bars i:nth-child(4) { animation-delay: -0.54s; }
+
 .hero-section {
   position: relative;
   min-height: 100svh;
@@ -1909,6 +1963,11 @@ svg {
   100% { transform: scale(1.25); opacity: 0; }
 }
 
+@keyframes music-equalizer {
+  from { transform: scaleY(0.58); color: var(--blue); }
+  to { transform: scaleY(2.35); color: var(--orange-light); }
+}
+
 @media (max-width: 1050px) {
   .hero-content {
     width: min(920px, calc(100% - 48px));
@@ -1926,6 +1985,8 @@ svg {
   .site-header__actions > span { display: none; }
   .site-header .share-button span { display: none; }
   .site-header .share-button { width: 40px; padding: 0; justify-content: center; }
+  .site-header .music-control__label { display: none; }
+  .site-header .music-control { width: 40px; padding: 0; justify-content: center; }
   .brand__mark { width: 43px; height: 43px; font-size: 14px; }
   .brand__copy strong { font-size: 13px; }
 
